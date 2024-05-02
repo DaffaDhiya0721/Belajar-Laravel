@@ -3,6 +3,8 @@
 use App\Models\AlbumMusik;
 use App\Models\Sekolah;
 use App\Models\Siswa;
+use App\Models\Film;
+use App\Models\DetailFilm;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -54,4 +56,9 @@ Route::get('sekolah', function () {
 Route::get('album_musik', function () {
     return view('album_musik');
 });
+
+Route::get('film', function () {
+    return view('film');
+});
+
 

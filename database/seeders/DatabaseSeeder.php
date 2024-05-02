@@ -25,5 +25,13 @@ class DatabaseSeeder extends Seeder
         $this->call([
             AlbumMusikSeeder::class,
         ]);
+
+        $this->call([
+            FilmSeeder::class,
+        ]);
+
+        $this->call([
+            DetailFilmSeeder::class,
+        ]);
     }
 }
