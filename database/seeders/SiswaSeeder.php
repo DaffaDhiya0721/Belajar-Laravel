@@ -17,10 +17,42 @@ class SiswaSeeder extends Seeder
     {
         Siswa::insert(
             [
+                'nama' => 'Daffa',
+                'kelas' => 'XI RPL 2',
+                'jenis_kelamin' => 0,
+                'alamat' => 'Jl.Cilisung',
+            ]
+            );
+        Siswa::insert(
+            [
+                'nama' => 'Dhiya',
+                'kelas' => 'XI RPL 2',
+                'jenis_kelamin' => 0,
+                'alamat' => 'Jl.Cilisung',
+            ]
+            );
+        Siswa::insert(
+            [
+                'nama' => 'Ulhaq',
+                'kelas' => 'XI RPL 2',
+                'jenis_kelamin' => 0,
+                'alamat' => 'Jl.Cilisung',
+            ]
+            );
+        Siswa::insert(
+            [
                 'nama' => 'Daffa Dhiya',
                 'kelas' => 'XI RPL 2',
                 'jenis_kelamin' => 0,
-                'alamat' => 'Jl.Cilisung'
+                'alamat' => 'Jl.Cilisung',
+            ]
+            );
+        Siswa::insert(
+            [
+                'nama' => 'Dhiya Ulhaq',
+                'kelas' => 'XI RPL 2',
+                'jenis_kelamin' => 0,
+                'alamat' => 'Jl.Cilisung',
             ]
             );
     }
