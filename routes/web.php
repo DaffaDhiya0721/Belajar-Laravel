@@ -61,4 +61,8 @@ Route::get('film', function () {
     return view('film');
 });
 
+Route::get('film/{id}', function(int $id) {
+    return view('detail-film', ['film' => Film::findOrFail($id)]);
+});
+
 
