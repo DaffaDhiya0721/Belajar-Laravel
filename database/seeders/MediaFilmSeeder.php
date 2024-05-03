@@ -20,16 +20,25 @@ class MediaFilmSeeder extends Seeder
                 'film_id' => 1,
                 'tipeMedia' => 1,
                 'title' => 'Director',
-                'urlMedia' => 'https://cdn.gramedia.com/uploads/authors/adhitya_mulya.jpg'
+                'urlMedia' => 'https://www.youtube.com/watch?v=KSfVtEXSmdk'
             ]
         );
         
         MediaFilm::insert(
             [
                 'film_id' => 1,
-                'tipeMedia' => 1,
+                'tipeMedia' => 0,
                 'title' => 'Pengarang',
                 'urlMedia' => 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSqW5XkjdoN88RNamVWAYcv19U5pmGiu_I8_o4r71tq-nXQfVKh'
+            ]
+        );
+
+        MediaFilm::insert(
+            [
+                'film_id' => 1,
+                'tipeMedia' => 0,
+                'title' => 'Pengarang',
+                'urlMedia' => 'https://www.pesona.co.id/img/images/ninit%20yunita.jpg'
             ]
         );
     }

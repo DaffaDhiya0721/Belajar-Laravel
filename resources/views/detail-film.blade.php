@@ -13,13 +13,11 @@
 
 {{-- Start One To Many --}}
 @foreach ($film->MediaFilm as $item)   
-    <p>Link Yutub : <a href="https://www.youtube.com/watch?v=KSfVtEXSmdk">Klik Di Sini</a></p>
     <p>Media Title : {{ $item->title }} </p>
     @if ($item->tipeMedia)
-    <img src="{{ $item->urlMedia }}" alt="" height="200">
-    @else
+    <a href="{{ $item->urlMedia }}">Klik Di Sini</a>
+    @else 
+    <img src="{{ $item->urlMedia }}" height="200">
     @endif
-
-    <hr>
 @endforeach
 {{-- End One To Many --}}
