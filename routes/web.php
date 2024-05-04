@@ -24,7 +24,7 @@ Route::get('/', function () {
 
 Route::get('/halaman2', function () {
     return view('animals');
-}); 
+});
 
 Route::get('/halaman3', function () {
     return view('fruits');
@@ -61,7 +61,7 @@ Route::get('film', function () {
     return view('film');
 });
 
-Route::get('film/{id}', function(int $id) {
+Route::get('film/{id}', function (int $id) {
     return view('detail-film', ['film' => Film::findOrFail($id)]);
 });
 
